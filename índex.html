@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Herói das Chamas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        section {
+            border: 1px solid #333;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            background-color: #1e1e1e;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin: 10px 0;
+        }
+        a {
+            color: #ff9800;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>🧑‍🚒 Herói das Chamas</h1>
+        <p>Você é um bravo bombeiro, sua missão é encontrar o cômodo que ainda tem uma pessoa nessa casa em chamas!</p>
+    </header>
+
+    <main>
+        <section id="rua">
+            <h2>Localização atual: Rua (Frente da casa)</h2>
+            <p>🔥 Depressa! Você está na frente da casa. O que você faz? 🔥</p>
+            <ul>
+                <li><a href="#sala">> Entro pela porta (Sala)</a></li>
+                <li><a href="#quarto1">> Entro pela janela (Quarto 1)</a></li>
+            </ul>
+        </section>
+
+        <section id="sala">
+            <h2>Localização atual: Sala</h2>
+            <p>Você está na Sala.</p>
+            <ul>
+                <li><a href="#rua">> Sair pela porta (Rua)</a></li>
+                <li><a href="#quarto1">> Ir pela porta para o Quarto</a></li>
+                <li><a href="#corredor">> Ir para o Corredor</a></li>
+            </ul>
+        </section>
+
+        <section id="quarto1">
+            <h2>Localização atual: Quarto (inferior direito)</h2>
+            <p>Você está no Quarto próximo à entrada.</p>
+            <ul>
+                <li><a href="#rua">> Sair pela janela (Rua)</a></li>
+                <li><a href="#sala">> Ir pela porta para a Sala</a></li>
+            </ul>
+        </section>
+
+        <section id="corredor">
+            <h2>Localização atual: Corredor</h2>
+            <p>Você está no Corredor lateral.</p>
+            <ul>
+                <li><a href="#sala">> Voltar para a Sala</a></li>
+                <li><a href="#cozinha">> Ir para a Cozinha</a></li>
+            </ul>
+        </section>
+
+        <section id="cozinha">
+            <h2>Localização atual: Cozinha</h2>
+            <p>Você está na Cozinha.</p>
+            <ul>
+                <li><a href="#corredor">> Ir para o Corredor</a></li>
+                <li><a href="#quarto2">> Ir pela porta para o Quarto Principal</a></li>
+                <li><a href="#banheiro">> Ir pela porta para o Banheiro</a></li>
+            </ul>
+        </section>
+
+        <section id="banheiro">
+            <h2>Localização atual: Banheiro</h2>
+            <p>Você está no Banheiro.</p>
+            <ul>
+                <li><a href="#cozinha">> Ir pela porta para a Cozinha</a></li>
+                <li><a href="#quarto2">> Ir para o Quarto Principal</a></li>
+            </ul>
+        </section>
+
+        <section id="quarto2">
+            <h2>🎉 Missão Cumprida!</h2>
+            <p><strong>Você encontrou a pessoa no Quarto Principal!</strong> O resgate foi efetuado com sucesso e o jogo foi concluído!</p>
+            <br>
+            <a href="#rua">🔄 Jogar Novamente</a>
+        </section>
+    </main>
+
+</body>
+</html>
